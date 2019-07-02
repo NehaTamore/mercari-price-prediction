@@ -1,5 +1,8 @@
-# mercari-price-prediction
+# Mercari-price-prediction
 - [Problem Description](#Problem-description)
+- [Data and Features](#Data-and-Features)
+- [Approach](#Approach)
+- [Architecture](#Architecture)
 - [Approach](#Approach)
 
 
@@ -24,6 +27,10 @@ The files consist of a list of product listings. These files are tab-delimited.
 7. shipping - 1 if shipping fee is paid by seller and 0 by buyer
 8. item_description - the full description of the item. Note that we have cleaned the data to remove text that look like prices (e.g. $20) to avoid leakage. These removed prices are represented as [rm]
 
+## Architecture ##
+
+  ![architecture diagram](https://github.com/NehaTamore/mercari-price-prediction/blob/feature/model/mercari_architecture.png)
+
 ## Approach ##
 
 - For categorical variables: 
@@ -40,9 +47,4 @@ The files consist of a list of product listings. These files are tab-delimited.
 - Numerical variable :
   1. price : Major improvement in the model performance could be observed when few transformations were used on price variable. The distribution of target variable was skewed and thus taking log and then using min max scaler increased accuracy by 20%
   
-  
-  Here is the baseline architecture of the model proposed!:
-  
-  ![architecture diagram](https://github.com/NehaTamore/mercari-price-prediction/blob/feature/model/mercari_architecture.png)
-
-  
+ - There was some duplicate products, but removal of which didn't improve the rmsle score. Thus it is removed from the baseline model
