@@ -1,6 +1,8 @@
 # Mercari-price-prediction
+
 - [Problem Description](#Problem-description)
 - [Data and Features](#Data-and-Features)
+- [Exploratory Data Analysis](#Exploratory-Data-Analysis)
 - [Approach](#Approach)
 - [Architecture](#Architecture)
 - [Approach](#Approach)
@@ -26,6 +28,11 @@ The files consist of a list of product listings. These files are tab-delimited.
 6. price - the price that the item was sold for. This is the target variable that you will predict. The unit is USD. This column doesn't exist in test.tsv since that is what you will predict.
 7. shipping - 1 if shipping fee is paid by seller and 0 by buyer
 8. item_description - the full description of the item. Note that we have cleaned the data to remove text that look like prices (e.g. $20) to avoid leakage. These removed prices are represented as [rm]
+
+## Exploratory Data Analysis ##
+Though a separate EDA notebook is added to this project with detailed description, the interactive graphs have issues when rendered in the ipython display of github. 
+Thus refere to the following link for the compelete analysis
+https://www.kaggle.com/kernels/scriptcontent/16174591/download
 
 ## Architecture ##
 
