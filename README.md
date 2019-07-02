@@ -32,11 +32,11 @@ The files consist of a list of product listings. These files are tab-delimited.
 ## Exploratory Data Analysis ##
 Though a separate EDA notebook is added to this project with detailed description, the interactive graphs have issues when rendered in the ipython display of github. 
 Thus refere to the following link for the compelete analysis
-https://www.kaggle.com/kernels/scriptcontent/16174591/download
+https://www.kaggle.com/nehaytamore/my-eda-of-mercari
 
 ## Architecture ##
 
-  ![architecture diagram](https://github.com/NehaTamore/mercari-price-prediction/blob/feature/model/mercari_architecture.png)
+  ![architecture diagram](https://github.com/NehaTamore/mercari-price-prediction/blob/master/mercari_architecture.png)
 
 ## Approach ##
 
